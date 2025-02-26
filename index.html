@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Gửi đến em bé.</strong>
+                        <p>
+                            Đây là lần đầu tiên anh viết thư tay cho ai đó và em chính là người đó. 
+                            Anh không biết bắt đầu từ đâu, nhưng có vẻ từ lần đầu gặp anh nghĩ mình đã chon đúng người.
+                            Anh thích mọi thứ về em.
+                            Anh không biết em có cảm thấy giống anh không, nhưng anh muốn em biết rằng anh rất muốn gặp em ngoài đời rất nhiều.
+                            Anh muốn gặp em mỗi ngày, muốn nói chuyện với em mỗi ngày và muốn cùng em đi dạo mỗi ngày dù khoảng cách có xa đến mấy. 
+                            Đây cũng là lần đầu tiên mình găp nhau nhưng anh cảm thấy mình đã quen nhau từ lâu rồi.
+                            Và mong rằng sau này chúng ta được gặp nhau nhiều lần hơn thế nữa.
+                            
+                            Luv em bé đáng iu của anh .
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
